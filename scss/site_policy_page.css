@@ -507,6 +507,23 @@ html body header .header_inner .header_nav ul .contact_li {
   }
 }
 
+@media (max-width: 560px) {
+  html body header .header_inner .header_nav ul .contact_li {
+    margin-left: 0px;
+    padding-left: 20px;
+  }
+}
+
+html body header .header_inner .header_nav ul .contact_li .sp_span {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  html body header .header_inner .header_nav ul .contact_li .sp_span {
+    display: initial;
+  }
+}
+
 html body header .header_inner .header_nav ul .contact_li a {
   line-height: 3em;
   color: white;
@@ -791,6 +808,12 @@ html body .contact_box .contact_text:before {
     height: 17px;
     /*画像の高さ*/
   }
+}
+
+html body .contact_box:hover {
+  opacity: 0.7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 html body .page_top_button {
