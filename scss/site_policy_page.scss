@@ -67,6 +67,10 @@ body{
                     }
     
             }/*img*/
+
+            img:hover{
+                opacity: 0.8;
+            }
     
             .header_nav{
     
@@ -142,6 +146,10 @@ body{
                             }/*a*/
                         }/*li*/
 
+                        li:hover{
+                            opacity: 0.8;
+                        }
+
                         .li_sp{
                             display: none;
 
@@ -154,14 +162,8 @@ body{
     
                         .contact_li{
                             background-color: green;
-                            padding-top: 20px;
-                            padding-bottom: 20px;
 
-                            @include pc{
-                                padding-top: 23.5px;
-                                padding-bottom: 23.5px;    
-                            }
-
+                        
                             @include tab{
                                 background-color: initial;
                             }
@@ -169,6 +171,23 @@ body{
                             a{
                                 line-height: 3em;
                                 color: white;
+                                display: block;
+                                padding-top: 20px;
+                                padding-bottom: 20px;
+
+                                @include pc{
+                                    padding-top: 23.5px;
+                                    padding-bottom: 23.5px;    
+                                }
+
+                                @include tab{
+                                    padding-top: 0px;
+                                    padding-bottom: 0px;  
+                                    line-height: 1em;  
+                                }
+    
+    
+
 
                                 .span_sp{
                                     display: none;
@@ -199,8 +218,8 @@ body{
       
             .btn-gnavi{
                 display: initial;
-                position: fixed;
-                top: 18px;
+                position: absolute;
+                top: 20px;
                 right: 20px;
                 width: 30px;
                 height: 24px;
@@ -252,17 +271,11 @@ body{
               span:nth-of-type(3){
                       top: 16.8px;
                       z-index: 1000;
-                      width: 17px;
-            
-                  
-              }/*span*/
-              
-            
+                      width: 17px;   
+              }/*span*/   
             }/*btn-gnavi*/
     }/*drawer_menu*/
-            
-            
-            
+
             
             .btn-gnavi.hb-open span:nth-of-type(1) {
               -webkit-transform: translateY(5px) rotate(-45deg);
@@ -280,9 +293,8 @@ body{
             
             }
             
-        }/*inner*/
+    }/*inner*/
 }/*header*/
-    
 
 
 .policy{
@@ -595,7 +607,7 @@ body{
                     padding: 0px 20px;
                     font-size: 14px;
                     letter-spacing: 1.05px;
-                    font-weight: 500;
+                    font-weight: 400;
 
                     @include pc{
                         padding: 0px 7px;
@@ -607,7 +619,7 @@ body{
                         font-weight: 400;
                         font-size: 13px;
                         letter-spacing: 0.975px;
-                        font-weight: 500;
+                        font-weight: 300;
                         line-height: 2;
 
                         @include pc{

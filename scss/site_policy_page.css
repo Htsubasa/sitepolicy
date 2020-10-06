@@ -383,6 +383,10 @@ html body header .header_inner img {
   }
 }
 
+html body header .header_inner img:hover {
+  opacity: 0.8;
+}
+
 html body header .header_inner .header_nav {
   /*ul*/
 }
@@ -475,6 +479,10 @@ html body header .header_inner .header_nav ul li a span {
   }
 }
 
+html body header .header_inner .header_nav ul li:hover {
+  opacity: 0.8;
+}
+
 html body header .header_inner .header_nav ul .li_sp {
   display: none;
   /*li_sp*/
@@ -488,15 +496,6 @@ html body header .header_inner .header_nav ul .li_sp {
 
 html body header .header_inner .header_nav ul .contact_li {
   background-color: green;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-@media (max-width: 1024px) {
-  html body header .header_inner .header_nav ul .contact_li {
-    padding-top: 23.5px;
-    padding-bottom: 23.5px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -508,7 +507,25 @@ html body header .header_inner .header_nav ul .contact_li {
 html body header .header_inner .header_nav ul .contact_li a {
   line-height: 3em;
   color: white;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
   /*span_sp*/
+}
+
+@media (max-width: 1024px) {
+  html body header .header_inner .header_nav ul .contact_li a {
+    padding-top: 23.5px;
+    padding-bottom: 23.5px;
+  }
+}
+
+@media (max-width: 768px) {
+  html body header .header_inner .header_nav ul .contact_li a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 1em;
+  }
 }
 
 html body header .header_inner .header_nav ul .contact_li a .span_sp {
@@ -538,8 +555,8 @@ html body header .header_inner .drawer_menu {
 
 html body header .header_inner .drawer_menu .btn-gnavi {
   display: initial;
-  position: fixed;
-  top: 18px;
+  position: absolute;
+  top: 20px;
   right: 20px;
   width: 30px;
   height: 24px;
@@ -975,7 +992,7 @@ html body .footer_inner .footer_nav ul li {
   padding: 0px 20px;
   font-size: 14px;
   letter-spacing: 1.05px;
-  font-weight: 500;
+  font-weight: 400;
   /*span*/
   /*policy_nav*/
 }
@@ -992,7 +1009,7 @@ html body .footer_inner .footer_nav ul li span {
   font-weight: 400;
   font-size: 13px;
   letter-spacing: 0.975px;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 2;
 }
 
