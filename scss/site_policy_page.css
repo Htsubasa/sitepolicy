@@ -426,7 +426,7 @@ html body header .header_inner .header_nav ul li {
   font-size: 18px;
   list-style: none;
   text-align: center;
-  padding: 0px 20px;
+  padding: 0px 23px;
   font-family: 'Noto Serif JP', serif;
   /*a*/
 }
@@ -496,6 +496,9 @@ html body header .header_inner .header_nav ul .li_sp {
 
 html body header .header_inner .header_nav ul .contact_li {
   background-color: green;
+  padding-right: 45px;
+  padding-left: 45px;
+  margin-left: 23px;
 }
 
 @media (max-width: 768px) {
@@ -510,6 +513,7 @@ html body header .header_inner .header_nav ul .contact_li a {
   display: block;
   padding-top: 20px;
   padding-bottom: 20px;
+  letter-spacing: 3.6px;
   /*span_sp*/
 }
 

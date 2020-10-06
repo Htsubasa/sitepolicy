@@ -100,7 +100,7 @@ body{
                             font-size: 18px;
                             list-style: none;
                             text-align: center;
-                            padding: 0px 20px;
+                            padding: 0px 23px;
                             font-family: 'Noto Serif JP', serif;
     
                             @include pc{
@@ -162,6 +162,9 @@ body{
     
                         .contact_li{
                             background-color: green;
+                            padding-right: 45px;
+                            padding-left: 45px;
+                            margin-left: 23px;
 
                         
                             @include tab{
@@ -174,18 +177,20 @@ body{
                                 display: block;
                                 padding-top: 20px;
                                 padding-bottom: 20px;
+                                letter-spacing: 3.6px;
 
                                 @include pc{
                                     padding-top: 23.5px;
                                     padding-bottom: 23.5px;    
                                 }
 
-                                @include tab{
-                                    padding-top: 0px;
-                                    padding-bottom: 0px;  
-                                    line-height: 1em;  
-                                }
-    
+
+                            @include tab{
+                                padding-top: 0px;
+                                padding-bottom: 0px;  
+                                line-height: 1em;  
+                            }
+
     
 
 
@@ -295,6 +300,7 @@ body{
             
     }/*inner*/
 }/*header*/
+
 
 
 .policy{
